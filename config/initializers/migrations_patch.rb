@@ -38,7 +38,7 @@ module ActiveRecordMigratorPatch
       migration.migrate(direction)
       record_version_state_after_migrating(migration.version)
       # New behavior.
-      # record_source_after_migrating(migration.filename) if up?
+      record_source_after_migrating(migration.filename) if up?
     end
   rescue => e
     msg = "An error has occurred, "
