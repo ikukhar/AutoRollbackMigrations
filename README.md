@@ -21,5 +21,5 @@ $
 $ rm (path to AddEmailToUsers migration file)
 $ rm (path to CreateUsers migration file)
 $
-$ rails db:auto_rollback            #Rollback db schema to the last migration file version
+$ rails db:auto_rollback            #Rollback db schema to the last version of migration files
 ```

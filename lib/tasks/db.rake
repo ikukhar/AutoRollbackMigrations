@@ -20,7 +20,7 @@ namespace :db do
     puts "======== Migrations sources loaded."
   end
 
-  desc "Auto rollback migrations to the last version in migration files"
+  desc "Auto rollback migrations to the last version of migration files"
   task :auto_rollback => :environment do
     ActiveRecord::Migrator.auto_rollback
   end
